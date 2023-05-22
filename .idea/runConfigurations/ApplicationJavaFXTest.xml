@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ApplicationJavaFXTest" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+    <option name="MAIN_CLASS_NAME" value="org.jugnicaragua.demo.webview.probandowebview.ApplicationJavaFXTest" />
+    <module name="probandoWebView" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;D:\JDK\javafx-sdk-17.0.7\lib&quot; --add-modules=javafx.controls,javafx.fxml,javafx.web" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
