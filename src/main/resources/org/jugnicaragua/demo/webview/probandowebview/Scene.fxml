@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jugnicaragua.demo.webview.probandowebview.Controller">
+   <bottom>
+      <ProgressBar prefWidth="200.0" progress="0.0" BorderPane.alignment="CENTER" />
+   </bottom>
+
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                   <WebView fx:id="webView" layoutX="7.0" layoutY="71.0" prefHeight="505.0" prefWidth="749.0" style="" />
+                           <TextField fx:id="textField" onAction="#loadPage" prefHeight="25.0" prefWidth="757.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+
+   <top>
+      <Pane prefHeight="72.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="618.0">
+               <items>
+                           <Button mnemonicParsing="false" onAction="#refreshPage" text="refresh" />
+                           <Button mnemonicParsing="false" onAction="#loadPage" text="load" />
+                           <Button mnemonicParsing="false" onAction="#zoomIn" text="+" />
+                           <Button mnemonicParsing="false" onAction="#zoomOut" prefHeight="25.0" prefWidth="25.0" text="-" />
+                           <Button mnemonicParsing="false" onAction="#displayHistory" text="history" />
+                           <Button mnemonicParsing="false" onAction="#back" text="back" />
+                           <Button mnemonicParsing="false" onAction="#forward" text="forward" />
+                           <Button mnemonicParsing="false" onAction="#executeJS" text="execute JS" />
+               </items>
+            </ToolBar>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
